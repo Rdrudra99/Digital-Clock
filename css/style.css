@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #fff;
+  --secondary-color: #202020;
+  --tertiary-color: rgb(48, 46, 46);
+  --fourth-color:rgba(0, 0, 0, 0.3);
+}
+.dark-theme {
+  --primary-color: #202020;
+  --secondary-color: #fff;
+  --tertiary-color: #ffffff;
+  --fourth-color:rgba(76, 75, 75, 0.74);
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--primary-color);
+  /* linear-gradient(to right,#ff9472 ,#f2709c); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.clock {
+  width: 900px;
+  height: 250px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+.clock div {
+  background-color: var(--primary-color);
+  height: 100%;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  color: var(--secondary-color);
+  border-radius: 5px;
+  box-shadow: 0 15px 30px var(--fourth-color);
+  letter-spacing: 3px;
+  border: 2px solid var(--primary-color);
+}
+.clock span {
+  font-weight: bolder;
+  font-size: 100px;
+  border-radius: 25%;
+  color: var(--secondary-color);
+}
+.content {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.content a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--secondary-color);
+  padding: 14px 70px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 50px;
+  box-shadow: 0 15px 30px var(--fourth-color);
+  margin: 5px;
+}
